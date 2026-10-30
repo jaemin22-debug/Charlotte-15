@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlotte's Web Chapter 15 Quiz</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 20px;
+      margin: 0;
+    }
+    .quiz-container {
+      max-width: 750px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      color: #0f172a;
+      text-align: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 15px;
+    }
+    .question-block {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .question-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+    .passage {
+      background-color: #f1f5f9;
+      border-left: 4px solid #3b82f6;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      font-style: italic;
+      border-radius: 0 6px 6px 0;
+      color: #334155;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .option-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.15s, border-color 0.15s;
+    }
+    .option-label:hover {
+      background-color: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+    .option-label input[type="radio"] {
+      margin: 0;
+      cursor: pointer;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #2563eb;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      margin-top: 20px;
+    }
+    .submit-btn:hover {
+      background-color: #1d4ed8;
+    }
+    #result-box {
+      display: none;
+      margin-top: 25px;
+      padding: 16px;
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>Charlotte's Web — Chapter 15 Quiz</h1>
+  <form id="quiz-form">
+
+    <!-- Question 1 -->
+    <div class="question-block">
+      <div class="question-title">1. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "A little maple tree in the swamp heard the cricket song and turned bright red with anxiety."
+      </div>
+      <p style="margin: 0 0 10px 0;">Which rhetorical device is primarily used in this sentence?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q1" value="A"> A) Hyperbole</label>
+        <label class="option-label"><input type="radio" name="q1" value="B"> B) Personification</label>
+        <label class="option-label"><input type="radio" name="q1" value="C"> C) Onomatopoeia</label>
+        <label class="option-label"><input type="radio" name="q1" value="D"> D) Irony</label>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-block">
+      <div class="question-title">2. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "Ever since the spider had befriended him, he had done his best to live up to his reputation. When Charlotte’s web said SOME PIG, Wilbur had tried hard to look like some pig."
+      </div>
+      <p style="margin: 0 0 10px 0;">In psychology and education, which concept best describes Wilbur's behavior—where high expectations placed upon an individual lead them to strive and improve their performance?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q2" value="A"> A) The Hawthorne Effect</label>
+        <label class="option-label"><input type="radio" name="q2" value="B"> B) The Bystander Effect</label>
+        <label class="option-label"><input type="radio" name="q2" value="C"> C) The Pygmalion Effect</label>
+        <label class="option-label"><input type="radio" name="q2" value="D"> D) The Placebo Effect</label>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-block">
+      <div class="question-title">3. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "It is not easy to look radiant, but Wilbur <u>threw</u> himself into it with a will."
+      </div>
+      <p style="margin: 0 0 10px 0;">Which of the following is closest in meaning to the underlined word <u>threw</u> in this context?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q3" value="A"> A) committed</label>
+        <label class="option-label"><input type="radio" name="q3" value="B"> B) forced</label>
+        <label class="option-label"><input type="radio" name="q3" value="C"> C) hurled</label>
+        <label class="option-label"><input type="radio" name="q3" value="D"> D) dragged</label>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-block">
+      <div class="question-title">4. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "Some of Wilbur's friends in the barn worried for fear all the attention would go to his head and make him stuck up. But it never did. Wilbur was modest; fame did not __________ him."
+      </div>
+      <p style="margin: 0 0 10px 0;">Which word best fits the blank?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q4" value="A"> A) comfort</label>
+        <label class="option-label"><input type="radio" name="q4" value="B"> B) deceive</label>
+        <label class="option-label"><input type="radio" name="q4" value="C"> C) discourage</label>
+        <label class="option-label"><input type="radio" name="q4" value="D"> D) spoil</label>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-block">
+      <div class="question-title">5. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "“<em>Please</em> come with me!” begged Wilbur. “I need you, Charlotte. I can’t <u>stand</u> going to the Fair without you. You’ve just <em>got</em> to come.”"
+      </div>
+      <p style="margin: 0 0 10px 0;">Which of the following sentences uses the underlined word <u>stand</u> in the same meaning as in the passage?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q5" value="A"> A) The old lighthouse has managed to <u>stand</u> against powerful ocean storms for over a century.</label>
+        <label class="option-label"><input type="radio" name="q5" value="B"> B) I simply cannot <u>stand</u> working in an office where there is constant loud noise.</label>
+        <label class="option-label"><input type="radio" name="q5" value="C"> C) The audience was asked to <u>stand</u> when the national anthem began playing.</label>
+        <label class="option-label"><input type="radio" name="q5" value="D"> D) Where do you <u>stand</u> regarding the new environmental regulation proposed by the council?</label>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-block">
+      <div class="question-title">6. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "The crickets sang in the grasses. They sang the song of summer's ending, a sad, monotonous song. 'Summer is over and gone,' they sang. 'Over and gone, over and gone. Summer is dying, dying.' The crickets felt it was their duty to warn everybody that summertime cannot last forever."
+      </div>
+      <p style="margin: 0 0 10px 0;">What is the primary literary function of the crickets' song in this chapter?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q6" value="A"> A) It provides comic relief to ease the tension among the barn animals.</label>
+        <label class="option-label"><input type="radio" name="q6" value="B"> B) It indicates that a severe natural disaster is approaching the Zuckerman farm.</label>
+        <label class="option-label"><input type="radio" name="q6" value="C"> C) It serves as a melancholic foreshadowing of impending changes and the inevitability of mortality.</label>
+        <label class="option-label"><input type="radio" name="q6" value="D"> D) It symbolizes the triumph and lasting success of Wilbur's newfound celebrity status.</label>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-block">
+      <div class="question-title">7. Read the following passage and answer the question:</div>
+      <div class="passage">
+        "“Of course I’m versatile,” replied Charlotte. “A spider that can’t turn with ease from one thing to another would be in a bad way.”<br>
+        “What does versatile mean—full of eggs?” asked Wilbur.<br>
+        “Certainly not,” said Charlotte. “It means I can turn with ease from one thing to another.”"
+      </div>
+      <p style="margin: 0 0 10px 0;">Based on the conversation above, which situation best illustrates someone being <strong>versatile</strong>?</p>
+      <div class="options">
+        <label class="option-label"><input type="radio" name="q7" value="A"> A) A teacher who smoothly shifts from lecturing in a classroom to designing interactive coding games and directing student plays</label>
+        <label class="option-label"><input type="radio" name="q7" value="B"> B) A researcher who strictly focuses on a single academic topic without exploring any related subjects</label>
+        <label class="option-label"><input type="radio" name="q7" value="C"> C) A student who insists on doing homework only in absolute silence and refuses to change their routine</label>
+        <label class="option-label"><input type="radio" name="q7" value="D"> D) An athlete who specializes exclusively in sprinting and declines all opportunities to participate in other sports</label>
+      </div>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">Submit Answers</button>
+  </form>
+
+  <div id="result-box"></div>
+</div>
+
+<script>
+  const correctAnswers = {
+    q1: 'B',
+    q2: 'C',
+    q3: 'A',
+    q4: 'D',
+    q5: 'B',
+    q6: 'C',
+    q7: 'A'
+  };
+
+  function checkAnswers() {
+    let score = 0;
+    const totalQuestions = Object.keys(correctAnswers).length;
+
+    for (let key in correctAnswers) {
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      if (selected && selected.value === correctAnswers[key]) {
+        score++;
+      }
+    }
+
+    const resultBox = document.getElementById('result-box');
+    resultBox.style.display = 'block';
+    resultBox.textContent = `Score: ${score} / ${totalQuestions}`;
+    resultBox.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
